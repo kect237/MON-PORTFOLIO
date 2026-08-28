@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Djofang Yanaelle-Kect | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAV FIXE EN HAUT -->
+    <nav class="navbar">
+  <a class="logo">Yanaelle-Kect</a>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+  <ul class="menu" id="menu">
+    <li><a href="#about">A propos</a></li>
+    <li><a href="#skills">Compétences</a></li>
+    <li><a href="#projets">Projets</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+    <header id="header">
+        <div class="header-content">
+            <span class="text_subtitle">Étudiante en Génie Logiciel & Stagiaire @ SolviaHub</span>
+            <h1>DJOFANG Yanaelle-Kect</h1>
+            <p class="subtitle">Développeuse Web | Passionnée par la création d'applications modernes</p>
+            <div class="header-buttons">
+                <a class="btn btn-primary" href="#projets">Découvrir mes projets</a>
+                <a class="btn btn-transparent" href="#contact">Besoin d'aide ? Contactez-moi</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- SECTION À PROPOS (AVEC PHOTO) -->
+        <article class="container presentation-section" id="about">
+            <div class="presentation-grid">
+                <div class="photo-container">
+                    <!-- Placez votre photo dans le dossier et mettez son nom ici -->
+                    <img src="profile.jpeg" alt="Djofang Yanaelle-Kect" class="profile-pic">
+                </div>
+                <div class="presentation-text">
+                    <span class="text_subtitle">Qui suis-je ?</span>
+                    <h2>Mon Parcours & Objectifs</h2>
+                    <p>En tant qu'étudiante en Génie Logiciel et stagiaire chez <strong>SolviaHub</strong>, je me consacre au développement d'applications web robustes, ergonomiques et sécurisées.</p>
+                    <p>Rigoureuse et curieuse, j'aime résoudre des problèmes techniques complexes et concevoir des bases de données bien structurées.</p>
+
+                    <ul class="info-list">
+                        <li><span class="cle">Nom complet :</span> <span class="valeur">DJOFANG Yanaelle-Kect</span></li>
+                        <li><span class="cle">Statut :</span> <span class="valeur">Stagiaire Développeuse chez SolviaHub</span></li>
+                        <li><span class="cle">Domaine :</span> <span class="valeur">Génie Logiciel</span></li>
+                        <li><span class="cle">eMail :</span> <span class="valeur"><a class="bleu" href="mailto:contact@yanaelle-kect.com">contact@yanaelle-kect.com</a></span></li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+
+        <!-- SECTION COMPÉTENCES -->
+        <article class="competence-section" id="competences">
+            <div class="container">
+                <p class="text_subtitle center">Mon stack technique</p>
+                <h2 class="center">Mes Compétences</h2>
+                
+                <div id="cards">
+                    <div class="card">
+                        <h3>HTML / CSS</h3>
+                        <p>Intégration responsive, respect des normes web, styles modernes et adaptatifs.</p>
+                    </div>
+                    <div class="card">
+                        <h3>JavaScript</h3>
+                        <p>Dynamisme côté client, manipulation du DOM, interactivité et requêtes asynchrones.</p>
+                    </div>
+                    <div class="card">
+                        <h3>PHP & Bases de Données</h3>
+                        <p>Développement backend, gestion des bases de données (SQL/MySQL) et architecture logicielle.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- SECTION PROJETS -->
+        <article class="projets-section" id="projets">
+            <div class="container">
+                <p class="text_subtitle center">Portfolio</p>
+                <h2 class="center">Mes Réalisations</h2>
+                
+                <div class="liste-image">
+                    <div class="project-card">
+                        <h3>Projet de Location</h3>
+                        <p>Application de gestion réalisée avec PHP, HTML/CSS et base de données MySQL.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Mon Portfolio</h3>
+                        <p>Conception complète de ce site vitrine pour présenter mes compétences et projets.</p>
+                    </div>
+                    <div class="project-card">
+                        <h3>Projets chez SolviaHub</h3>
+                        <p>Développements d'applications et modules web réalisés au cours de mon stage.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+         <!-- SECTION SERVICES -->
+        <article class="services-section" id="services">
+            <div class="container">       
+         <p class="text_subtitle center">Ce que je propose</p>
+                <h2 class="center">Développement & Entraide</h2>
+                
+                <div class="liste-service">
+                    <div class="service-card">
+                        <h3>Développement Web</h3>
+                        <p>Conception et réalisation de sites web et applications sur mesure en HTML, CSS, JavaScript et PHP.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Bases de Données</h3>
+                        <p>Modélisation, structuration et optimisation de bases de données pour vos projets informatiques.</p>
+                    </div>
+                    <div class="service-card">
+                        <h3>Assistance & Entraide</h3>
+                        <p>Besoin d'aide sur un projet ou d'un conseil technique ? Je suis disponible pour échanger.</p>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <!-- SECTION CONTACT -->
+        <article class="contact-section" id="contact">
+            <div class="container">
+                <p class="text_subtitle center">Formulaire</p>
+                <h2 class="center">Contactez-moi ou Demandez de l'aide</h2>
+                
+                <form method="POST" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" name="nom" placeholder="Votre Nom *" required>
+                        <input type="email" name="email" placeholder="Votre eMail *" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="telephone" placeholder="Téléphone">
+                        <input type="text" name="sujet" placeholder="Sujet / Projet">
+                    </div>
+                    <textarea name="message" placeholder="Votre message ou votre besoin d'aide *" required></textarea>
+                    <p class="center"><button type="submit" class="btn btn-primary top30">Envoyer le message</button></p>
+                </form>
+            </div>
+        </article>
+
+    </main>
+
+    <footer>
+        <div class="container center">
+            <h4>Djofang Yanaelle-Kect - Développeuse Web & Génie Logiciel</h4>
+            <p>Stagiaire chez SolviaHub | Toujours ouverte aux opportunités de collaboration et à l'entraide.</p>
+            <p class="copyright top30">Tous droits réservés © Djofang Yanaelle-Kect</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
