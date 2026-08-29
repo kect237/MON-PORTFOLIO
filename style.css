@@ -320,12 +320,25 @@ footer h4 {
 }
 
 @media screen and (max-width: 1024px) {
-    /* Cache les textes du menu et affiche les 3 barres */
-    .menu { display: none; }
-    .menu.active { display: flex !important; flex-direction: column; }
     .burger { display: flex !important; }
-
-    /* Formulaire en 1 seule colonne */
-    form { display: flex; flex-direction: column; }
-    form input, form select, form textarea { width: 100% !important; }
+    
+    .menu {
+        display: none;
+        position: absolute;
+        top: 65px;
+        right: 15px;
+        width: 170px;
+        background: rgba(13, 27, 30, 0.7);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 10px 0;
+        z-index: 1000;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu.active { display: flex !important; }
+    .menu li { list-style: none; margin: 8px 0; }
+    .menu li a { color: #fff; text-decoration: none; font-size: 15px; }
 }
