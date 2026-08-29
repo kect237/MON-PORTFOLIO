@@ -319,8 +319,45 @@ footer h4 {
     border-radius: 2px;
 }
 
-@media screen and (max-width: 768px) {
-    /* Aligne la photo en haut et le texte juste en dessous */
+@media screen and (max-width: 1024px) {
+    .burger { 
+        display: flex !important; 
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #0d1b1e;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
+        border-bottom: 2px solid #2ecc71;
+        z-index: 10000;
+    }
+
+    .menu.active {
+        display: flex !important;
+    }
+
+    .menu li {
+        list-style: none;
+        width: 100%;
+        text-align: center;
+        margin: 12px 0;
+    }
+
+    .menu li a {
+        display: block;
+        color: #ffffff !important;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+    /* Ajustement photo mobile */
     .about-content,
     .about-container {
         display: flex !important;
@@ -329,11 +366,10 @@ footer h4 {
         text-align: center !important;
     }
 
-    /* Affiche correctement la photo centrée et bien visible */
     .about-img {
-        order: -1 !important; /* Place la photo AVANT le texte */
-        width: 220px !important;
-        height: 220px !important;
+        order: -1 !important;
+        width: 200px !important;
+        height: 200px !important;
         margin: 0 auto 20px auto !important;
     }
 
