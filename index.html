@@ -10,16 +10,30 @@
 
     <!-- NAV FIXE EN HAUT -->
     <nav class="navbar">
-  <a class="logo">Yanaelle-Kect</a>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-  <ul class="menu" id="menu">
-    <li><a href="#about">A propos</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#projets">Projets</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+        <a href="#" id="logo">Yanaelle-Kect</a>
+          <!-- AJOUTER CETTE LIGNE -->
+    <button class="burger" onclick="document.querySelector('.menu').classList.toggle('active')">&#9776;</button>
+
+    <ul class="menu">
+        <!-- Bouton Burger à ajouter dans la navbar -->
+<button class="burger" onclick="document.querySelector('.menu').classList.toggle('active')">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</button>
+</button>
+
+<!-- Votre menu <ul> existant reste juste après -->
+<ul class="menu">
+    ...
+        <ul class="menu">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#services">Entraide & Dev</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <header id="header">
         <div class="header-content">
@@ -89,14 +103,25 @@
                 
                 <div class="liste-image">
                     <div class="project-card">
-                        <h3>Projet de Location</h3>
-                        <p>Application de gestion réalisée avec PHP, HTML/CSS et base de données MySQL.</p>
-                    </div>
+                        <div class="div class="liste-image""> <!-- ou class="project-card" -->
+    <!-- AJOUTEZ L'IMAGE ICI -->
+    <img src="image.jpeg" alt="Projet Location" class="project-img">
+
+    <h3>Projet de Location</h3>
+    <p>Application de gestion réalisée avec PHP, HTML/CSS et base de donné</p>
+</div>
+                        
+</div>
+
                     <div class="project-card">
+                        <img src="image.jpeg" alt=" mon portfolio" class="project-img">
+
                         <h3>Mon Portfolio</h3>
                         <p>Conception complète de ce site vitrine pour présenter mes compétences et projets.</p>
                     </div>
                     <div class="project-card">
+                        <img src="image.jpeg" alt="project-card" class="project-img">
+
                         <h3>Projets chez SolviaHub</h3>
                         <p>Développements d'applications et modules web réalisés au cours de mon stage.</p>
                     </div>
@@ -133,7 +158,7 @@
                 <p class="text_subtitle center">Formulaire</p>
                 <h2 class="center">Contactez-moi ou Demandez de l'aide</h2>
                 
-                <form method="POST" id="contact-form">
+               <form action="https://formspree.io/f/VOTRE_CODE_FORMSPREE" method="POST" id="contact-form">
                     <div class="form-group">
                         <input type="text" name="nom" placeholder="Votre Nom *" required>
                         <input type="email" name="email" placeholder="Votre eMail *" required>

@@ -298,32 +298,42 @@ footer h4 {
   border-color: #9c225e;
   box-shadow: 0 12px 30px rgba(156, 34, 94, 0.5);
 }
-.hamburger{display:none;}
+/* --- MENU MOBILE SIMPLE FIXE --- */
+.burger {
+    display: none; /* Masqué sur PC */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 18px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
 
-@media screen and (max-width:768px){
-  .navbar{
-    display:flex !important;
-    justify-content:space-between !important;
-    align-items:center !important;
-  }
-  .hamburger{
-    display:block !important;
-    font-size:30px;
-    color:white;
-    cursor:pointer;
-    z-index:10000;
-  }
-  #menu{
-    display:none !important;
-    position:absolute;
-    top:65px;
-    left:0;
-    width:100%;
-    background:#0a3d2e;
-    flex-direction:column;
-    padding:25px;
-  }
-  #menu.active{
-    display:flex !important;
-  }
+.burger .bar {
+    width: 100%;
+    height: 3px;
+    background-color: var(--green-accent, #2ecc71);
+    border-radius: 2px;
+}
+
+@media screen and (max-width: 768px) {
+    .burger { 
+        display: flex; /* Visible uniquement sur Téléphone */
+    }
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--green-dark);
+        flex-direction: column;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .menu.active {
+        display: flex;
+    }
 }
