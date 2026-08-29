@@ -320,28 +320,15 @@ footer h4 {
 }
 
 @media screen and (max-width: 768px) {
-    .burger { 
-        display: flex; 
+    .about-content {
+        flex-direction: column !important;
+        text-align: center !important;
     }
-
-    .menu {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: #0d1b1e;
-        flex-direction: column;
-        align-items: center;
-        padding: 20px 0;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
-        border-bottom: 2px solid #2ecc71;
-        z-index: 10000;
+    .about-img img {
+        max-width: 250px !important;
+        margin-bottom: 20px !important;
     }
-
-    .menu.active {
-        display: flex !important;
-    }
+}
 
     .menu li {
         list-style: none;
@@ -356,4 +343,4 @@ footer h4 {
         font-size: 18px;
         text-decoration: none;
     }
-}
+
