@@ -374,3 +374,41 @@ footer h4 {
     border-radius: 8px 8px 0 0;
     display: block;
 }
+.card-media-split {
+    display: flex !important;
+    flex-direction: row !important; /* Force la disposition côte à côte */
+    width: 100%;
+    height: 220px;                 /* Hauteur augmentée pour ne pas que ce soit trop réduit */
+    gap: 6px;                      /* Petit espace entre l'image et la vidéo */
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+}
+
+/* Rend la carte verticale comme les autres */
+.project-card {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: stretch !important;
+}
+
+/* Bloc contenant l'image et la vidéo côte à côte */
+.card-media-split {
+    display: flex !important;
+    flex-direction: row !important;
+    width: 100% !important;
+    height: 160px !important;       /* Même hauteur que les autres cartes */
+    gap: 6px !important;
+    border-radius: 8px !important;
+    overflow: hidden !important;
+    margin-bottom: 15px !important; /* Pousse le texte vers le bas */
+}
+
+/* Image et vidéo divisées 50/50 */
+.card-media-split img,
+.card-media-split video {
+    width: 50% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    display: block !important;
+}
