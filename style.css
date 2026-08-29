@@ -298,42 +298,67 @@ footer h4 {
   border-color: #9c225e;
   box-shadow: 0 12px 30px rgba(156, 34, 94, 0.5);
 }
-/* --- MENU MOBILE SIMPLE FIXE --- */
+/* --- MENU MOBILE PROPRE ET STYLISÉ --- */
 .burger {
-    display: none; /* Masqué sur PC */
+    display: none;
     flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 18px;
+    justify-content: space-around;
+    width: 32px;
+    height: 24px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
+    z-index: 1001;
 }
 
 .burger .bar {
     width: 100%;
     height: 3px;
-    background-color: var(--green-accent, #2ecc71);
-    border-radius: 2px;
+    background-color: #2ecc71; /* Vert bien visible et lumineux */
+    border-radius: 3px;
 }
 
 @media screen and (max-width: 768px) {
     .burger { 
-        display: flex; /* Visible uniquement sur Téléphone */
+        display: flex; /* S'affiche sur mobile */
     }
+
     .menu {
         display: none;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--green-dark);
+        background-color: #0d231a; /* Fond vert foncé élégant */
         flex-direction: column;
+        align-items: center;
         padding: 20px 0;
+        gap: 15px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        border-bottom: 2px solid #2ecc71;
+    }
+
+    .menu.active {
+        display: flex; /* S'ouvre quand on tape sur le bouton */
+    }
+
+    .menu li {
+        list-style: none;
+        width: 100%;
         text-align: center;
     }
-    .menu.active {
-        display: flex;
+
+    .menu li a {
+        display: block;
+        color: #ffffff !important; /* Texte bien blanc */
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px 0;
+        text-decoration: none;
+    }
+
+    .menu li a:hover {
+        color: #2ecc71 !important;
     }
 }
