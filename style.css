@@ -320,25 +320,44 @@ footer h4 {
 }
 
 @media screen and (max-width: 1024px) {
-    .burger { display: flex !important; }
+    .burger { 
+        display: flex !important; 
+    }
     
     .menu {
         display: none;
-        position: absolute;
-        top: 65px;
-        right: 15px;
-        width: 170px;
-        background: rgba(13, 27, 30, 0.7);
-        backdrop-filter: blur(10px);
-        border-radius: 12px;
-        border: 1px solid rgba(255, 255, 255, 0.1);
-        padding: 10px 0;
-        z-index: 1000;
-        flex-direction: column;
-        align-items: center;
+        position: absolute !important;
+        top: 65px !important;
+        right: 15px !important;
+        left: auto !important;
+        width: 190px !important;
+        background: rgba(13, 27, 30, 0.75) !important;
+        backdrop-filter: blur(12px) !important;
+        -webkit-backdrop-filter: blur(12px) !important;
+        border-radius: 16px !important;
+        border: 1px solid rgba(255, 255, 255, 0.2) !important;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5) !important;
+        padding: 15px 0 !important;
+        z-index: 10000 !important;
+        flex-direction: column !important;
+        align-items: center !important;
     }
     
-    .menu.active { display: flex !important; }
-    .menu li { list-style: none; margin: 8px 0; }
-    .menu li a { color: #fff; text-decoration: none; font-size: 15px; }
+    .menu.active { 
+        display: flex !important; 
+    }
+    
+    .menu li { 
+        list-style: none !important; 
+        margin: 8px 0 !important; 
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    .menu li a { 
+        color: #ffffff !important; 
+        text-decoration: none !important; 
+        font-size: 16px !important; 
+        display: block !important;
+    }
 }
