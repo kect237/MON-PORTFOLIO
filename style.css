@@ -298,30 +298,30 @@ footer h4 {
   border-color: #9c225e;
   box-shadow: 0 12px 30px rgba(156, 34, 94, 0.5);
 }
-/* --- MENU MOBILE PROPRE ET STYLISÉ --- */
+/* --- MENU MOBILE CORRIGÉ --- */
 .burger {
     display: none;
     flex-direction: column;
-    justify-content: space-around;
-    width: 32px;
-    height: 24px;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
     background: transparent;
     border: none;
     cursor: pointer;
     padding: 0;
-    z-index: 1001;
+    z-index: 10001;
 }
 
 .burger .bar {
     width: 100%;
     height: 3px;
-    background-color: #2ecc71; /* Vert bien visible et lumineux */
-    border-radius: 3px;
+    background-color: #2ecc71;
+    border-radius: 2px;
 }
 
 @media screen and (max-width: 768px) {
     .burger { 
-        display: flex; /* S'affiche sur mobile */
+        display: flex; 
     }
 
     .menu {
@@ -330,35 +330,30 @@ footer h4 {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: #0d231a; /* Fond vert foncé élégant */
+        background-color: #0d1b1e;
         flex-direction: column;
         align-items: center;
         padding: 20px 0;
-        gap: 15px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
         border-bottom: 2px solid #2ecc71;
+        z-index: 10000;
     }
 
     .menu.active {
-        display: flex; /* S'ouvre quand on tape sur le bouton */
+        display: flex !important;
     }
 
     .menu li {
         list-style: none;
         width: 100%;
         text-align: center;
+        margin: 12px 0;
     }
 
     .menu li a {
         display: block;
-        color: #ffffff !important; /* Texte bien blanc */
-        font-size: 16px;
-        font-weight: bold;
-        padding: 10px 0;
+        color: #ffffff !important;
+        font-size: 18px;
         text-decoration: none;
-    }
-
-    .menu li a:hover {
-        color: #2ecc71 !important;
     }
 }

@@ -10,30 +10,22 @@
 
     <!-- NAV FIXE EN HAUT -->
     <nav class="navbar">
-        <a href="#" id="logo">Yanaelle-Kect</a>
-          <!-- AJOUTER CETTE LIGNE -->
-    <button class="burger" onclick="document.querySelector('.menu').classList.toggle('active')">&#9776;</button>
+    <a href="#" id="logo"> Yanaelle-Kect</a>
 
-    <ul class="menu">
-        <!-- Bouton Burger à ajouter dans la navbar -->
-<button class="burger" onclick="document.querySelector('.menu').classList.toggle('active')">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-</button>
-</button>
+    <button class="burger" id="burger-btn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </button>
 
-<!-- Votre menu <ul> existant reste juste après -->
-<ul class="menu">
-    ...
-        <ul class="menu">
-            <li><a href="#about">À propos</a></li>
-            <li><a href="#competences">Compétences</a></li>
-            <li><a href="#projets">Projets</a></li>
-            <li><a href="#services">Entraide & Dev</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <ul class="menu" id="nav-menu">
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#services">Entraide & Dev</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
     <header id="header">
         <div class="header-content">
